@@ -1,0 +1,80 @@
+/* ---------------------------------全体 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* ボックスサイズの計算方法を指定 */
+    font-size: 16px; /* GOOGLE推奨フォントサイズ */
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template:
+    "header" 50px
+    "obi" 30px
+    "main" 1fr
+    "footer" auto
+    / 1fr;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #ededed;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* ---------------------------------ヘッダー */
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    background-color: #282725;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+ul {
+    display:flex;
+}
+
+/* ナビの間隔 */
+header li {
+    margin-left: 1rem;
+}
+
+#logo {
+    padding-top: 0.65rem;
+}
+
+#nav-pc {
+    padding-top: 1rem;
+}
+
+/* ---------------------------------帯バナー */
+
+.obi {
+    grid-area: obi;
+    background-color: #999999;
+    margin-top: 1px;
+}
+
+.obi-text {
+    padding-top: 0.2rem;
+    text-align: center;
+    color: #ffffff;
+}
