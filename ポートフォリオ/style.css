@@ -1,3 +1,4 @@
+/* ------------------------------------------TOP */
 /* ---------------------------------全体 */
 
 * {
@@ -18,10 +19,14 @@ body {
     display: grid;
     grid-template:
     "header" 50px
-    "obi" 30px
+    "obi" auto
     "main" 1fr
     "footer" auto
     / 1fr;
+}
+
+ul {
+    display:flex;
 }
 
 li {
@@ -38,6 +43,22 @@ a:hover {
     text-decoration: underline;
 }
 
+/* タイトル */
+
+section {
+    margin-bottom: 7rem;
+}
+
+.subtitle {
+    margin-top:30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 34px;
+}
+
 /* ---------------------------------ヘッダー */
 header {
     grid-area: header;
@@ -48,9 +69,7 @@ header {
     padding-right: 3%;
 }
 
-ul {
-    display:flex;
-}
+
 
 /* ナビの間隔 */
 header li {
@@ -77,4 +96,215 @@ header li {
     padding-top: 0.2rem;
     text-align: center;
     color: #ffffff;
+}
+
+/* ----------------------------------パンクズくずリスト */
+
+.pankuzu {
+    margin-top: 1.5rem;
+}
+
+.pankuzu a {
+    color: #5f5f5f;
+    font-size: 13px;
+}
+
+.pankuzu li {
+    color: #5f5f5f;
+    margin-left: 0.3rem;
+}
+
+.right_arrow {
+    position: relative;
+    top: 1px;
+}
+
+/* ---------------------------------メインビジュアル */
+.mainvisual-img {
+    width: 100%;
+}
+
+
+/* ---------------------------------ピックアップ */
+.pickup-matome {
+    display: grid;
+    grid-template: 
+    "pickup1 pickup2 pickup3" auto
+    / 1fr 1fr 1fr ;
+    gap: 2rem;
+}
+
+.pickup1 {
+    grid-area: pickup1;
+}
+
+.pickup2 {
+    grid-area: pickup2;
+}
+
+.pickup3 {
+    grid-area: pickup3;
+}
+
+#pickup img {
+    width: 100%;
+    margin-bottom: 0.7rem;
+}
+
+.hiduke {
+    color: #6f6c6c;
+    font-size: 12px;
+}
+
+.pickup-setumei {
+    font-size: 14px;
+}
+
+/* ---------------------------------商品一覧 */
+
+.product-matome {
+    display: grid;
+    grid-template: 
+    "item01 item02 item03 item04" auto
+    "item05 item06 item07 item08" auto
+    "item09 item10 item11 item12" auto
+    / 1fr   1fr    1fr    1fr;
+    gap: 1.5%;
+}
+
+.product-matome img{
+    width: 100%;
+}
+
+.item01 {
+    grid-area: item01;
+}
+
+.item02 {
+    grid-area: item02;
+}
+
+.item03 {
+    grid-area: item03;
+}
+
+.item04 {
+    grid-area: item04;
+}
+
+.item05 {
+    grid-area: item05;
+}
+
+.item06 {
+    grid-area: item06;
+}
+
+.item07 {
+    grid-area: item07;
+}
+
+.item08 {
+    grid-area: item08;
+}
+
+.item09 {
+    grid-area: item09;
+}
+
+.item10 {
+    grid-area: item10;
+}
+
+.item011 {
+    grid-area: item11;
+}
+
+.item12 {
+    grid-area: item12;
+}
+
+.shouhin {
+    margin-top: 0.5rem;
+}
+
+.price {
+    margin-top: 0.3rem;
+    margin-bottom: 20%;
+    font-size: 1rem;
+}
+
+/* 階層 */
+
+.kaisou {
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+
+.kaisou li {
+    margin-left: 1.5rem ;
+}
+
+.kaisou a{
+    color: #000000;
+    text-align: center;
+}
+
+/* ---------------------------------フッター */
+
+footer {
+    background-color: #282725;
+    padding-top: 2.5rem;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+footer ul {
+    justify-content: center;
+}
+
+.footer-nav {
+    margin-top: 1.8rem;
+    position: relative;
+    left: 70px;
+
+}
+
+
+footer li {
+    margin-top: 1rem;
+    margin-right: 6rem;
+    margin-bottom: 2.4rem;
+}
+
+#copyright {
+    text-align: center;
+    color: #ffffff;
+}
+
+/* ------------------------------------------商品詳細 */
+
+#shousai {
+    display: grid;
+    grid-template: 
+    "shouhin-img shouhin-setumei" auto
+    ".           shouhin-setumei" auto
+    / 1fr          1fr;
+    gap: 10%;
+    margin-top: 4%;
+}
+
+.shousai-img {
+    grid-area: shouhin-img;
+}
+
+.shousai-img img {
+    width: 30%;
+}
+
+.shouhin-setumei {
+    grid-area: shouhin-setumei;
 }
