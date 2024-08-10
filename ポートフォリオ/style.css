@@ -16,13 +16,6 @@ body, html {
 body {
     max-width: 1280px;
     margin: 0 auto;
-    /* display: grid;
-    grid-template:
-    "header" 50px
-    "obi" auto
-    "main" 1fr
-    "footer" auto
-    / 1fr; */
 }
 
 ul {
@@ -50,8 +43,8 @@ section {
 }
 
 .subtitle {
-    margin-top:30px;
-    margin-bottom: 30px;
+    margin-top:4rem;
+    margin-bottom: 4rem;
     text-align: center;
 }
 
@@ -309,4 +302,18 @@ footer li {
 
 .shouhin-setumei {
     grid-area: shouhin-setumei;
+}
+
+
+/* ------------------------------------------会社概要とお問い合わせ */
+
+#company-table {
+    width: 100%;
+}
+
+.tableheader {
+    font-size: 1.25rem;
+    text-align: left;
+    padding: 2rem;
+    border-bottom-color: gray;
 }
