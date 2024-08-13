@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会社情報とお問い合わせ</title>
+    <meta name="description" content="会社情報とお問い合わせ画面です">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <header>
+        <!-- ロゴ -->
+        <a href="top.html" id="logo">
+            <img src="img/logo.svg" alt="TOPページに戻る">
+        </a>
+
+        <!-- ナビゲーション -->
+        <nav id="nav-pc">
+            <ul>
+                <li><a href="top.html">TOP</a></li>
+                <li><a href="company_contact.html#company">COMPANY</a></li>
+                <li><a href="company_contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>   
+        <!-- パンくず -->
+        <ul class="pankuzu">
+            <li>
+                <a href="top.html">TOP</a>
+            </li>
+            <li class="right_arrow">
+                >
+            </li>
+            <li>
+                <a href="company_contact.html">会社概要とお問い合わせ</a>
+            </li>
+        </ul>
+    <main>
+        <section id="company">
+            <div class="subtitle">
+                <h1 class="pickup-h1">会社概要</h1>
+            </div>
+                <table id="company-table">
+                    <tr>
+                        <th class="tableheader-first">会社名</th>
+                        <td class="cell-first">株式会社portfolio</td>
+                    </tr>
+                    <tr>
+                        <th class="tableheader">所在地</th>
+                        <td class="cell">〒100-0005　東京都千代田区丸の内１丁目</td>
+                    </tr>
+                    <tr>
+                        <th class="tableheader">設立</th>
+                        <td class="cell">XXXX年XX月</td>
+                    </tr>
+                    <tr>
+                        <th class="tableheader">資本金</th>
+                        <td class="cell">XXXX万円</td>
+                    </tr>
+                    <tr>
+                        <th class="tableheader">事業内容</th>
+                        <td class="cell">サンプル<br>サンプル<br>サンプル</td>
+                    </tr>
+                    <tr>
+                        <th class="tableheader">代表者</th>
+                        <td class="cell">三田 恭平</td>
+                    </tr>
+                </table>
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2873.474803308867!2d139.76484174668798!3d35.68125741094041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1722171845410!5m2!1sja!2sjp" 
+                width="550" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>            
+          </section>
+
+        <section id="customer">
+            <div class="subtitle">
+                <h1 class="pickup-h1">お問い合わせ</h1> 
+            </div>
+                <form>
+                    <div>
+                        <div class="contact-heading">
+                            <label>お名前 <sapn class="contact-span">必須</sapn></label>
+                        </div>
+                        <div>
+                            <input type="text" name="name" placeholder="名前を入力してください" class="contact-textbox">                       
+                        </div>
+                    </div>
+                    <div>
+                        <div class="contact-heading">
+                            <label class="contact-label">フリガナ<span class="contact-span">必須</span></label>
+                        </div>
+                        <div>
+                            <input type="text" name="hurigana" placeholder="入力してください" class="contact-textbox">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="contact-heading">
+                            <label class="contact-label">メールアドレス<span class="contact-span">必須</span></label>
+                        </div>
+                        <div>
+                            <input type="text" name="email" placeholder="入力してください" class="contact-textbox">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="contact-heading">
+                            <label class="contact-label">電話番号<span class="contact-span">必須</span></label>
+                        </div>
+                        <div>
+                            <input type="text" name="tel" placeholder="入力してください" class="contact-textbox">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="contact-heading">
+                            <label class="contact-label">お問い合わせ内容<span class="contact-span">必須</span></label>
+                        </div>
+                        <div>
+                            <textarea class="contact-textarea" placeholder="入力してください" name="messalge"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="contact-heading">
+                            <label class="contact-label">ご希望の連絡先<span class="contact-span">必須</span></label>
+                        </div>
+                        <div>
+                            <input class="radiobutton" type="radio" value="tel" name="contact" checked><label>お電話</label>
+                            <input class="radiobutton" type="radio" value="mail" name="contact"><laebl>メール</laebl>
+                            <input class="radiobutton" type="radio" value="both" name="contact"><laebl>どちらでも</laebl>
+                        </div>
+                    </div>
+                    <input type="image" src="img/mail.png" alt="送信する">
+                </form>
+        </section>
+
+    </main>
+    <footer>
+        <!-- フッター内のロゴ -->
+        <div class="footer-logo">
+            <a href="top.html">
+                <img src="img/logo.svg" alt="TOPページに戻る">
+            </a>
+        </div>
+
+        <!-- フッター内のナビゲーション -->
+        <div class="footer-nav">
+            <ul class="footer-content">
+                <li><a href="top.html">TOP</li>
+                <li><a href="#">COMPANY</li>
+                <li><a href="#">CONTACT</li>
+            </ul>
+        </div>
+
+        <!-- フッター内のコピーライト -->
+        <div>
+            <p id="copyright">&copy;portfolio</p>
+        </div>       
+    </footer>
+</body>
+</html>
