@@ -7,6 +7,9 @@
     <meta name="description" content="ポートフォリオです">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+         <!-- slickの読み込み -->
+         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 </head>
 
 <body>
@@ -32,11 +35,25 @@
     </div>
 
     <main>
-        <!-- メインビジュアル -->
+        <!-- メインビジュアル (カルーセル) -->
         <section id="mainvisual">
-            <a href="shouhin.html">
-                <img src="img/mainvisual.png" alt="メインヴィジュアル" class="mainvisual-img">
-            </a>
+            <div class="carousel">
+                <div>
+                    <a href="shouhin.html">
+                        <img src="img/mainvisual.png" alt="メインヴィジュアル" class="mainvisual-img">
+                    </a>
+                </div>
+                <div>
+                    <a href="shouhin.html">
+                        <img src="img/mainvisual.png" alt="メインヴィジュアル" class="mainvisual-img">
+                    </a>
+                </div>
+                <div>
+                    <a href="shouhin.html">
+                        <img src="img/mainvisual.png" alt="メインヴィジュアル" class="mainvisual-img">
+                    </a>
+                </div>
+            </div>
         </section>
 
         <!-- ピックアップ -->
@@ -142,5 +159,12 @@
             <p id="copyright">&copy;portfolio</p>
         </div>       
     </footer>
+
+       <!-- slickの読み込み -->
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script src="script.js"></script>
 </body>
 </html>
