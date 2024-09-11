@@ -19,14 +19,37 @@
             <img src="img/logo.svg" alt="TOPページに戻る">
         </a>
 
-        <!-- ナビゲーション -->
+        <!-- PC用ナビゲーション -->
         <nav id="nav-pc">
             <ul>
                 <li><a href="top.html">TOP</a></li>
                 <li><a href="company_contact.html">COMPANY</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="company_contact.html#customer">CONTACT</a></li>
             </ul>
         </nav>
+
+        <!-- スマホ用メニューボタン -->
+        <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
+            <img src="img/button_open.png" alt="ナビゲーションを開く">
+            </button>
+
+        <!-- スマホ用ナビゲーション -->
+        <div id="nav-sp">
+            <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
+                <img src="img/button-close.png" alt="ナビゲーションを閉じる">
+            </button>
+    
+            <nav>
+                <ul>
+                <li>
+                    <a id="logo-sp" href="top.html" onclick="document.getElementById('nav-sp').style.display = 'none'"><img src="img/logo.svg" alt="トップページに戻る"></a>
+                </li>
+                <li><a class="menu" href="TOP.html" onclick="document.getElementById('nav-sp').style.display = 'none'">TOP</a></li>
+                <li><a class="menu" href="company_contact.html" onclick="document.getElementById('nav-sp').style.display = 'none'">COMPANY</a></li>
+                <li><a class="menu" href="company_contact.html#customer" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!-- 帯テキスト -->
@@ -148,9 +171,9 @@
         <!-- フッター内のナビゲーション -->
         <div class="footer-nav">
             <ul class="footer-content">
-                <li><a href="top.html">TOP</li>
-                <li><a href="#">COMPANY</li>
-                <li><a href="#">CONTACT</li>
+                <li><a href="top.html">TOP</a></li>
+                <li><a href="#">COMPANY</a></li>
+                <li><a href="#">CONTACT</a></li>
             </ul>
         </div>
 
