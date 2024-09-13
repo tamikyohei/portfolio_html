@@ -79,6 +79,9 @@ header li {
     padding-top: 1rem;
 }
 
+#menu-sp  {
+    display: none;
+}
 
   /*====================
    スマートフォン用のスタイル
