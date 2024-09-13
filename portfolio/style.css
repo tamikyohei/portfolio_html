@@ -79,7 +79,7 @@ header li {
     padding-top: 1rem;
 }
 
-#menu-sp  {
+#menu-sp ,#nav-sp  {
     display: none;
 }
 
