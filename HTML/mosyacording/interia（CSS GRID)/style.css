@@ -1,0 +1,147 @@
+/* ---------------------------------全体 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* ボックスサイズの計算方法を指定 */
+}
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    max-width: 1280px;
+    width: 90vw;  
+    font-size: 12px;
+    margin: 0 auto;
+    display: grid;
+    grid-template: 
+    "head" auto
+    "main" 1fr
+    "footer" auto
+    / 1fr;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color:blue;
+}
+
+/* ---------------------------------head */
+
+header{
+    grid-area: head;
+    position: fixed;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100vw;
+    background-color:white ;
+    z-index: 1;
+
+    }
+
+.logo_img{
+    width: 190px;
+}
+
+/* ---------------------------------main */
+
+main {
+    grid-area: main;
+    margin-top: 100px;
+    
+}
+
+.imgs{
+    display: grid;
+    grid-template: 
+    "item1 item2 item3 item4" auto
+    "item5 item6 item7 item8" auto 
+    "item9 item10 item11 item12" auto/
+     1fr   1fr    1fr  1fr    ;
+     gap:3.5vw;
+}
+
+.img_sub{
+    width: 100%;
+}
+
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.viewmore {
+    text-align: center;
+    margin-top: 3vh;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 580px){
+
+ .imgs{display: grid;
+    grid-template: 
+    "item1 item2" auto
+    "item3 item4" auto
+    "item5 item6" auto
+    "item7 item8" auto 
+    "item9 item10" auto
+    "item11 item12" auto/
+     1fr   1fr      ;
+     gap:3.5vw;
+}
+
+}
+    
+
+/* ---------------------------------footer */
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    font-size: 13px;
+}
+
+
+.footer {
+    display: flex;
+}
+
+.sns {
+    margin-right: 30px;
+}
+
+
+
+
+/* ---------------------------------product */
+
+.subtitle{
+    margin-bottom: 2.5vw;
+}
+
+.kaisou {
+    display: flex;
+    justify-content: center;
+    margin-top: 4vh;
+    margin-bottom: 20vh;
+}
+
+.bangou {
+    font-size: 1.1rem;
+    margin-right: 30px;
+}
